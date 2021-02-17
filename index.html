@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Christina_Test</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="section">
+		 <h1>Hello</h1>
+		  <div class="box">
+			<p class="box__text">For business enquiries please <br> use the form below</p>
+			<p class="box__text-title box__text-title_up">*Required</p>
+			<form action="#">
+			  <ul class="box__items">
+				<li class="box__item"><p class="box__text-title">Name*</p>
+					<input class="box__input" type="text" name="name"></li>
+				<li class="box__item"><p class="box__text-title">Company*</p>
+					<input class="box__input" type="text" name="company"></li>
+				<li class="box__item"><p class="box__text-title">E-mail*</p>
+					<input class="box__input" type="text" name="mail"></li>
+				<li class="box__item"><p class="box__text-title">Phone</p>
+					<input class="box__input" type="text" name="phone"></li>
+				<li class="box__item"><p class="box__text-title">Subject</p>
+					<input class="box__input" type="text" name="subject"></li>
+				<li class="box__item"><p class="box__text-title">Message*</p>
+					<input class="box__input" type="text" name="message" placeholder="But I must explain to you how all this mistaken idea of denouncing"></li>
+				<li class="box__item box__item_7"><input class="box__flag" type="checkbox" name="a" value="accept" checked>I accept <span class="underlined">Terms and Privacy Policy</span></li>
+			  </ul>
+			  <input class="box__button" type="submit" name="submit" value="Send">
+			</form>
+	    </div>	
+	</div>
+
+
+<script>
+
+  const button = document.querySelector(".box__button"); 
+  const handler = () => {
+  	alert("Спасибо! Мы получили ваше сообщение.")
+  };
+
+   button.addEventListener("click", handler);
+
+</script>
+
+</body>
+</html>
